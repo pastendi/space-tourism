@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bellefair;
+  }
+  h5 {
+    @apply font-barlow text-[28px] tracking-[4.75px];
+  }
+  h1 {
+    @apply text-[150px];
+  }
+  h2 {
+    @apply text-[100px];
+  }
+  h3 {
+    @apply text-[56px];
+  }
+  h4 {
+    @apply text-[32px];
+  }
+}
+.subheading1 {
+  @apply font-bellefair text-[28px];
+}
+.subheading2,
+.nav-text {
+  @apply font-barlow;
+}
+.subheading2 {
+  @apply text-sm tracking-[2.35px];
+}
+.nav-text {
+  @apply tracking-[2.7px];
+}
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25x;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 3px;
+  background: #ffffff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+.cross {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.cross ~ .hamburger-bottom {
+  transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
