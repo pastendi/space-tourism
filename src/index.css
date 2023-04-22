@@ -73,3 +73,9 @@ nav {
 .cross ~ .hamburger-bottom {
   transform: rotate(-45deg) translateX(-6px) translateY(6px);
 }
+.nav-link {
+  @apply px-0 h-[96px] uppercase nav-text flex justify-center items-center hover:border-b-2;
+}
+.mobile-link {
+  @apply pl-6 h-[50px] uppercase nav-text flex justify-start items-center;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../images/shared/logo.svg'
 import { navLinks } from '../utils/navLinks'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [menuClicked, setMenuClicked] = useState(false)
   return (
@@ -32,12 +33,16 @@ const Navbar = () => {
           <div className='flex flex-col mt-32'>
             {navLinks.map((x, index) => {
               return (
-                <div
+                <NavLink
+                  to={x.path}
                   key={index}
-                  className='pl-6 h-[50px] uppercase nav-text flex justify-start items-center hover:border-r-4'
+                  onClick={() => setMenuClicked(!menuClicked)}
+                  className={({ isActive }) =>
+                    isActive ? 'mobile-link border-r-4' : 'mobile-link'
+                  }
                 >
                   {x.link}
-                </div>
+                </NavLink>
               )
             })}
           </div>
@@ -49,12 +54,15 @@ const Navbar = () => {
           <div className='flex md:space-x-8 lg:space-x-16 items-center'>
             {navLinks.map((x, index) => {
               return (
-                <div
+                <NavLink
+                  to={x.path}
                   key={index}
-                  className='px-0 h-[96px] uppercase nav-text flex justify-center items-center hover:border-b-4'
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link border-b-4' : 'nav-link'
+                  }
                 >
                   {x.link}
-                </div>
+                </NavLink>
               )
             })}
           </div>
