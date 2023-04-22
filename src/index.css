@@ -25,6 +25,10 @@
     @apply text-[32px];
   }
 }
+nav {
+  background-color: rgba(128, 109, 109, 0.2);
+  backdrop-filter: blur(20px);
+}
 .subheading1 {
   @apply font-bellefair text-[28px];
 }
