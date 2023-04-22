@@ -42,7 +42,7 @@ const Destination = () => {
               <div className='flex flex-col '>
                 <div>
                   <h3 className='uppercase text-center lg:text-left md:text-[80px]'>
-                    Moon
+                    {destinations[choice].name}
                   </h3>
                   <p className='text-center lg:text-left text-[15px] md:text-[1rem]'>
                     {destinations[choice].about}
