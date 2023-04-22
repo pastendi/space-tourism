@@ -39,17 +39,17 @@ const Destination = () => {
                   )
                 })}
               </div>
-              <div className='flex flex-col '>
+              <div className='flex flex-col justify-center items-center lg:items-start'>
                 <div>
                   <h3 className='uppercase text-center lg:text-left md:text-[80px]'>
                     {destinations[choice].name}
                   </h3>
-                  <p className='text-center lg:text-left text-[15px] md:text-[1rem]'>
+                  <p className='text-center lg:text-left text-[15px] md:text-[1rem] max-w-[458px]'>
                     {destinations[choice].about}
                   </p>
                   <div className='h-[1px] bg-white bg-opacity-25 mt-8'></div>
                 </div>
-                <div className='flex flex-col md:flex-row justify-around lg:justify-start lg:space-x-20'>
+                <div className='flex flex-col md:flex-row justify-around lg:justify-start md:space-x-20'>
                   <div className='text-center lg:text-left mt-8'>
                     <p className='subheading2 uppercase'>avg. distance</p>
                     <p className='subheading1 uppercase'>
