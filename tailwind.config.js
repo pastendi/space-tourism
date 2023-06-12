@@ -29,10 +29,10 @@ export default {
           "url('./src/images/technology/background-technology-mobile.jpg')",
         'tablet-technology':
           "url('./src/images/technology/background-technology-tablet.jpg')",
-        'desktop-technology':
-          "url('./src/images/technology/background-technology-desktop.jpg')",
+        'desktop-technology': "url('./src/images/')",
       }),
     },
   },
   plugins: [],
+  safelist: ['mobile-home', 'tablet-home', 'desktop-home'],
 }
