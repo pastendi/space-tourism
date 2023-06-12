@@ -2,7 +2,10 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='absolute left-0 top-0 bg-mobile-home md:bg-tablet-home lg:bg-desktop-home bg-no-repeat min-h-screen h-auto w-screen bg-cover'>
+    <div
+      id='home'
+      className='absolute left-0 top-0 bg-no-repeat min-h-screen h-auto w-screen bg-cover'
+    >
       <div className='container max-w-6xl mx-auto'>
         <div className='flex flex-col px-6 lg:flex-row'>
           <div className='flex flex-col space-y-4  text-center lg:text-left max-w-md mx-auto mt-28 lg:mt-[387px] lg:w-1/2'>
