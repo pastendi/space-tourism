@@ -12,7 +12,7 @@ export default {
         primary: '#FFFFFF',
         secondary: '#D0D6F9',
       },
-      backgroundImage: () => ({
+      backgroundImage: (theme) => ({
         'mobile-home': "url('./src/images/home/background-home-mobile.jpg')",
         'tablet-home': "url('./src/images/home/background-home-tablet.jpg')",
         'desktop-home': "url('./src/images/home/background-home-desktop.jpg')",
@@ -33,12 +33,6 @@ export default {
           "url('./src/images/technology/background-technology-desktop.jpg')",
       }),
     },
-  },
-  screens: {
-    sm: '480px',
-    md: '768px',
-    lg: '1020px',
-    xl: '1440px',
   },
   plugins: [],
 }
